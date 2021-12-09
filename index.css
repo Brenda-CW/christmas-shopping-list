@@ -1,0 +1,114 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--snow);
+    /* height: 100vh; */
+    background: repeating-linear-gradient(
+        45deg,
+        #77A047,
+        #77A047 10px,
+        #C7375F 10px,
+        #C7375F 20px
+    );
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-green);
+    padding: 80px;
+    margin: 75px 45px;
+    border-radius: 15px;
+}
+
+h1 { 
+  font-family: 'Kavoon', cursive;
+  font-size: 2.25em; 
+}
+
+.checklist {
+    color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 5ch;
+    background: var(--snow);
+    padding: 1em 2em;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.checklist-item {
+    margin: 0.35em;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+/* input field */
+.add-item-input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+}
+
+body input[type="text"] {
+    background-color: var(--snow);
+    border-radius: 8px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/*class for the add button*/
+.add-item,
+.delete-item {
+    padding: 15px 30px;
+    background-color:#D42D2F;
+    margin: 10px;
+}
+
+.delete-item {
+    background-color: var(--dark-green);
+}
+
+
+button {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    color: #F0F4F7;
+    font-family: 'Kavoon', cursive;
+}
